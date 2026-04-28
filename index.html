@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web de Pruebas: Defectos Comunes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loading-overlay">
+        <h2>Cargando componentes... (Simulando retraso > 10s)</h2>
+    </div>
+
+    <div class="container">
+        <h1>Tienda de Pruebas</h1>
+        <hr>
+
+        <section>
+            <h3>Producto: Laptop Pro</h3>
+            <p>Precio: $1500</p>
+            <button class="btn" onclick="agregarAlCarrito()">Agregar al carrito</button>
+            <p id="mensaje-carrito" style="color: red;"></p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Calculadora de Promedio</h3>
+            <p>Valores a promediar: 10, 8, 6</p>
+            <button class="btn" onclick="calcularPromedio()">Calcular Promedio</button>
+            <p id="resultado-logico"></p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Suscribite al Newsletter</h3>
+            <div class="form-group">
+                <span class="invisible-label">Email:</span>
+                <input type="text" placeholder="Escribí acá...">
+            </div>
+            <div class="form-group">
+                <span class="invisible-label">Nombre:</span>
+                <input type="text">
+            </div>
+            <button class="btn">Enviar</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
