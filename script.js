@@ -33,7 +33,7 @@ function calcularTotal() {
 
   // Mensaje con el error expuesto
   document.getElementById("resultado-logico").innerText =
-    "El total a pagar es: $" + totalFalso + " (Error: debería ser $302.50)";
+    "El total a pagar es: $" + totalFalso ;
 
   // CORRECCIÓN: Comentá la línea de arriba y descomentá esta para borrar el mensaje de error:
   // document.getElementById("resultado-logico").innerText = "El total a pagar es: $" + totalCorrecto;
