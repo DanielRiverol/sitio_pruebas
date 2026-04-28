@@ -18,21 +18,23 @@ function agregarAlCarrito() {
   // document.getElementById("mensaje-carrito").innerText = ""; // Limpiamos cualquier texto previo
 }
 
-// Defecto Lógico: El cálculo es incorrecto
-function calcularPromedio() {
-  const notas = [10, 8, 6];
-  const suma = 10 + 8 + 6; // Podrías sumar iterando el array, pero dejamos esto simple
+// Defecto Lógico: El cálculo matemático está mal implementado
+function calcularTotal() {
+  const precioMonitor = 200;
+  const precioTeclado = 50;
+  const subtotal = precioMonitor + precioTeclado; // 250
 
-  // El error está en el divisor (debería ser 3)
-  const promedioFalso = suma / 2;
+  // El error está en cómo se aplica el porcentaje del IVA.
+  // Se está sumando 0.21 (centavos) en lugar de sumarle el 21% al subtotal.
+  const totalFalso = subtotal + 0.21;
 
-  // CORRECCIÓN: Comentá la línea de arriba y descomentá esta para usar la longitud del array:
-  // const promedioCorrecto = suma / notas.length;
+  // CORRECCIÓN: Comentá la línea de arriba y descomentá esta para hacer el cálculo correcto:
+  // const totalCorrecto = subtotal + (subtotal * 0.21);
 
   // Mensaje con el error expuesto
   document.getElementById("resultado-logico").innerText =
-    "El promedio es: " + promedioFalso + " (Error: debería ser 8)";
+    "El total a pagar es: $" + totalFalso + " (Error: debería ser $302.50)";
 
   // CORRECCIÓN: Comentá la línea de arriba y descomentá esta para borrar el mensaje de error:
-  // document.getElementById("resultado-logico").innerText = "El promedio es: " + promedioCorrecto;
+  // document.getElementById("resultado-logico").innerText = "El total a pagar es: $" + totalCorrecto;
 }
